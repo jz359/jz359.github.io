@@ -12,6 +12,10 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
+		<script src="assets/js/modernizr.custom.js"></script>
 	</head>
 	<body>
 
@@ -24,10 +28,10 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="landing.html">About Me</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="hobbies.html">Hobbies</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li data-animation="1"><a href="landing.html">About Me</a></li>
+						<li data-animation="1"><a href="projects.html">Projects</a></li>
+						<li data-animation="1"><a href="hobbies.html">Hobbies</a></li>
+						<li data-animation="1"><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -425,10 +429,9 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
-			<!-- Velocity.js scripts -->
-			<script src="js/jquery-2.1.4.js"></script>
-			<script src="js/velocity.min.js"></script>
-			<script src="js/velocity.ui.min.js"></script>
-			<script src="js/main.js"></script> <!-- Resource jQuery -->
+			<!-- transition scripts -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="assets/js/jquery.dlmenu.js"></script>
+			<script src="assets/js/pagetransitions.js"></script>
 	</body>
 </html>
