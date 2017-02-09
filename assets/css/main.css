@@ -2598,7 +2598,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -2609,7 +2609,7 @@
 	}
 
 	#onep:before {
-		background-image: url("../../images/banner2.jpg");
+		background-image: url("../../images/banner2.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
