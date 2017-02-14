@@ -1067,7 +1067,7 @@ div.panel {
 
 .image {
   display: block;
-  width: 70%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin-left: auto;
@@ -1081,7 +1081,7 @@ div.panel {
   left: 0;
   right: 0;
   height: 100%;
-  width: 70%;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: #000;
