@@ -1,66 +1,98 @@
 <!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Andy Zhang</title>
+		<title>Andy Zhang's Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 
+		<!--
+		<ul class="topnav" id="myTopnav">
+		  <li><a href="#home">Home</a></li>
+		  <li><a href="#news">News</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="#about">About</a></li>
+		  <li class="icon">
+		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		  </li>
+		</ul-->
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/me.jpg" alt="" /></span>
-					<h1 id="logo"><a href="index.html">Andy Zhang</a></h1>
-					<p>homo sapiens<br />sophos moros</p>
+					<div id="circle">
+						<a href="index.html"><img src="images/me.png" class="curve"></a>
+						<h1 class="thick">Hello!</h1>
+						<p>Glad you found my website.</p>
+						<p>If you're looking for my resume, click <a href="assets/resume.pdf">here</a>.<br/>Otherwise, feel free to explore more about me.</p>
+						<a href="http://facebook.com/az359" class="fa fa-facebook"></a>
+						<a href="http://twitter.com/jz359" class="fa fa-twitter"></a>
+						<a href="http://linkedin.com/in/jz359" class="fa fa-linkedin"></a>
+						<a href="http://github.com/jz359" class="fa fa-github"></a>
+					</div>
+					<!--<h1 id="logo"><a href="index.html">Andy Zhang</a></h1>-->
 				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="landing.html">About Me</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="hobbies.html" class="active">Hobbies</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
 			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			<section id="main">
+				<p><br/><br/>I'm an undergrad at Cornell University studying Computer Science and Electrical Engineering.<br/>My favorite topics include machine vision/learning, signal processing, and computational theory.<br/><br/>In general, my life is composed of CS and non-CS things.<br/><br/><br/></p>
+			</section>
 
-				<!-- Main -->
-					<div id="main">
-												<!-- Three -->
-						<section id="three">
-								<div class="container">
-									<h3>Hobbies</h3>
-									<p>Life outside of computer science is what keeps me sane and identifiable as a human.</p>
-									<ul class="feature-icons">
-										<li class="fa-code">Write all the code</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
-										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
-									</ul>
-								</div>
-							</section>
+			<ul>
+				<a href="projects.html"><button class="button"><span>projects</span></button></a>
+				<a href="hobbies.html"><button class="button"><span>hobbies</span></button></a>
+			</ul>
+			<section id="projects">
+					<div class="project">
+						<img src="images/blood.png" width="220" height="130" class="curve">
+						<p class="thick">Robot Doctor Eyes<br/><br/></p>
+						<p>a Python/OpenCV module that processes microscope images of white blood cells and classifies them.<br/></p>
 					</div>
-			</div>
+
+					<div class="project">
+						<img src="images/critterworld2.png" width="220" height="130" class="curve">
+						<p class="thick">A Whole New World<br/><br/></p>
+						<p>built with Java, complete with a Critter language, compiler, interpreter, simulator, and more.<br/></p>
+					</div>
+
+					<div class="project">
+						<img src="images/magafood.png" width="220" height="130" class="curve">
+						<p class="thick">Yelp ft. Google Maps<br/><br/></p>
+						<p>a fun Android project that lets you drool over pictures of food from nearby restaurants.</p>
+					</div>
+			</section>
+
+			<!--
+			<section id="hobbies">
+				<div id="hobby">
+					<h1>Basketball<br/><br/></h1>
+					<p>Always up for a game of pickup. Avid follower of the NBA.<br/></p>
+				</div>
+
+				<div id="hobby">
+					<h1>Hiking<br/><br/></h1>
+					<p>Nature is nice.<br/></p>
+				</div>
+
+				<div id="hobby">
+					<h1>Reading<br/><br/></h1>
+					<p>Good books only.<br/></p>
+				</div>
+
+				<div id="hobby">
+					<h1>Drawing<br/><br/></h1>
+					<p>Typical shy doodler.<br/></p>
+				</div>
+			</section>
+			-->
+
+			<footer>
+
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -70,6 +102,5 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

@@ -5,85 +5,67 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
+		<section id="header">
+			<header>
+				<div id="circle">
+					<a href="index.html"><img src="images/me.png" class="curve"></a>
+					<h1 class="thick">CS is my main mojo.</h1>
+					<p>For more details, (git) checkout my Github!</p>
+					<a href="http://github.com/jz359" class="fa fa-github"></a>
+				</div>
+				<!--<h1 id="logo"><a href="index.html">Andy Zhang</a></h1>-->
+			</header>
+		</section>
 
-		<!--
-		<ul class="topnav" id="myTopnav">
-		  <li><a href="#home">Home</a></li>
-		  <li><a href="#news">News</a></li>
-		  <li><a href="#contact">Contact</a></li>
-		  <li><a href="#about">About</a></li>
-		  <li class="icon">
-		    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-		  </li>
-		</ul>
-		-->
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<div id="circle">
-						<a href="index.html"><img src="images/me.png" class="curve"></a>
-						<h1 class="thick">Hello!</h1>
-						<p>Glad you found my website.</p>
-						<p>If you're looking for my resume, click <a href="assets/resume.pdf">here</a>.<br/>Otherwise, feel free to explore more about me.</p>
-					</div>
-					<!--<h1 id="logo"><a href="index.html">Andy Zhang</a></h1>-->
-				</header>
-			</section>
-
-			<section id="main">
-				<p><br/><br/>I'm an undergrad at Cornell University studying Computer Science and Electrical Engineering.<br/>My favorite topics include machine vision/learning, signal processing, and computational theory.<br/><br/><br/></p>
-			</section>
-
-			<section id="projects">
-				<div id="project">
+		<section id="main">
+			<p><br/><br/>Here's some stuff I've done.<br/><br/><br/></p>
+		</section>
+		
+		<section id="projects">
+				<div class="project">
+					<img src="images/blood.png" width="220" height="130" class="item">
 					<p class="thick">Robot Doctor Eyes<br/><br/></p>
 					<p>a Python/OpenCV module that processes microscope images of white blood cells and classifies them.<br/></p>
 				</div>
 
-				<div id="project">
+				<div class="project">
+					<img src="images/critterworld2.png" width="220" height="130" class="item">
 					<p class="thick">A Whole New World<br/><br/></p>
-					<p>literally an entirely different world of Critters, built with Java, complete with a Critter language, compiler, interpreter, simulator, and more.<br/></p>
+					<p>built with Java, complete with a Critter language, compiler, interpreter, simulator, and more.<br/></p>
 				</div>
 
-				<div id="project">
+				<div class="project">
+					<img src="images/magafood.png" width="220" height="130" class="item">
 					<p class="thick">Yelp ft. Google Maps<br/><br/></p>
 					<p>a fun Android project that lets you drool over pictures of food from nearby restaurants.</p>
 				</div>
-			</section>
+		</section>
+		<footer>
+		</footer>
 
-			<!--
-			<section id="hobbies">
-				<div id="hobby">
-					<h1>Basketball<br/><br/></h1>
-					<p>Always up for a game of pickup. Avid follower of the NBA.<br/></p>
-				</div>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollzer.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<script>
+			function show() {
+			    var x = document.getElementById('pdiv');
+			    if (x.style.display === 'none') {
+			        x.style.display = 'block';
+			    } else {
+			        x.style.display = 'none';
+			    }
+			}
+		</script>
 
-				<div id="hobby">
-					<h1>Hiking<br/><br/></h1>
-					<p>Nature is nice.<br/></p>
-				</div>
-
-				<div id="hobby">
-					<h1>Reading<br/><br/></h1>
-					<p>Good books only.<br/></p>
-				</div>
-
-				<div id="hobby">
-					<h1>Drawing<br/><br/></h1>
-					<p>Typical shy doodler.<br/></p>
-				</div>
-			</section>
-			-->
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 	</body>
 </html>
