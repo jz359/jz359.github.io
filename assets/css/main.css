@@ -939,6 +939,10 @@ img {
     padding: 2px 9px;
 }
 
+body {
+	font-size: 100%;
+}
+
 h1 {
 	font-style: normal;
 	font-family: Open Sans, sans-serif;
@@ -949,14 +953,24 @@ h1.thick {
 	font-weight: bold;
 }
 
-body {
-	font-size: 100%;
-}
-
 p {
 	font-family: Open Sans, sans-serif;
 }
 
 p.thick {
 	font-weight: bold;
+}
+
+.project {
+    height: 1em;
+    width: 11em;
+    float: left;
+}
+
+.project {
+    margin-right: 3em;
+}
+
+.floatClear {
+    clear: both;
 }
