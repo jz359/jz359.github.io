@@ -1026,7 +1026,7 @@ button.accordion {
     transition: 0.4s;
 }
 
-button.accordion.active, button.accordion:hover {
+button.accordion:hover {
     opacity: 0.7; 
 }
 
