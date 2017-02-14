@@ -906,6 +906,12 @@ h1 {
 	font-size: 2.5em;
 }
 
+h2 {
+	font-style: normal;
+	font-family: Open Sans, sans-serif;
+	font-size: 1.5em;	
+}
+
 h1.thick {
 	font-weight: bold;
 }
@@ -1004,4 +1010,51 @@ p.thick {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* fancy dropdown stuff for projects and whatnot */
+button.accordion {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 200px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    opacity: 0.7; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    text-align: left;
+    padding: 18px;
+    cursor: pointer;
+}
+
+/* column formatter */
+.col-container {
+    display: table;
+    width: 50%;
+    text-align: center;
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    width: 30%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .col { 
+        display: block;
+        width: 100%;
+    }
 }

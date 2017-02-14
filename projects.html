@@ -24,28 +24,73 @@
 		</section>
 
 		<section id="main">
-			<p><br/><br/>Here's some stuff I've done.<br/><br/><br/></p>
+			<p><br/><br/> <br/><br/><br/></p>
 		</section>
+
+		<!--
+		<button class="accordion">Section 1</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Section 2</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Section 3</button>
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		-->
+
+		<div class="col-container">
+		  <div class="col">
+		  	<img src="images/blood.png" width="220" height="130" class="item">
+		    <button class="accordion">Cell_ID</button>
+		    <div class="panel">
+		  		<p>a Python/OpenCV module that processes microscope images of white blood cells and classifies them.</p>
+			</div>
+		  </div>
+
+		  <div class="col">
+			<img src="images/critterworld2.png" width="220" height="130" class="item">
+		    <button class="accordion">Critter World</button>
+		    <div class="panel">
+		  		<p>built with Java, complete with a Critter language, compiler, interpreter, and more.</p>
+			</div>
+		  </div>
+
+		  <div class="col">
+			<img src="images/magafood.png" width="220" height="130" class="item">
+		    <button class="accordion">Yelp x GMaps</button>
+		    <div class="panel">
+		  		<p>a fun Android project that lets you drool over pictures of food from nearby restaurants.</p>
+			</div>
+		  </div>
+		</div>
 		
+		<!--
 		<section id="projects">
 				<div class="project">
-					<img src="images/blood.png" width="220" height="130" class="item">
+					<img src="images/blood.png" width="220" height="130">
 					<p class="thick">Robot Doctor Eyes<br/><br/></p>
 					<p>a Python/OpenCV module that processes microscope images of white blood cells and classifies them.<br/></p>
 				</div>
 
 				<div class="project">
-					<img src="images/critterworld2.png" width="220" height="130" class="item">
+					<img src="images/critterworld2.png" width="220" height="130">
 					<p class="thick">A Whole New World<br/><br/></p>
 					<p>built with Java, complete with a Critter language, compiler, interpreter, simulator, and more.<br/></p>
 				</div>
 
 				<div class="project">
-					<img src="images/magafood.png" width="220" height="130" class="item">
+					<img src="images/magafood.png" width="220" height="130">
 					<p class="thick">Yelp ft. Google Maps<br/><br/></p>
 					<p>a fun Android project that lets you drool over pictures of food from nearby restaurants.</p>
 				</div>
 		</section>
+		-->
 		<footer>
 		</footer>
 
@@ -57,16 +102,22 @@
 		<script src="assets/js/util.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
+
 		<script>
-			function show() {
-			    var x = document.getElementById('pdiv');
-			    if (x.style.display === 'none') {
-			        x.style.display = 'block';
-			    } else {
-			        x.style.display = 'none';
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			    acc[i].onclick = function(){
+			        this.classList.toggle("active");
+			        var panel = this.nextElementSibling;
+			        if (panel.style.display === "block") {
+			            panel.style.display = "none";
+			        } else {
+			            panel.style.display = "block";
+			        }
 			    }
 			}
 		</script>
-
 	</body>
 </html>
