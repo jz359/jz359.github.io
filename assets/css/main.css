@@ -1068,7 +1068,7 @@ div.panel {
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
