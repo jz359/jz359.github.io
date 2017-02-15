@@ -920,6 +920,11 @@ p {
 	font-family: Open Sans, sans-serif;
 }
 
+p.small {
+	font-family: Open Sans, sans-serif;
+	font-size: 0.75em;
+}
+
 p.thick {
 	font-weight: bold;
 }
