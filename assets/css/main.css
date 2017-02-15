@@ -1042,7 +1042,7 @@ div.panel {
 /* column formatter */
 .col-container {
     display: table;
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 
@@ -1090,7 +1090,7 @@ div.panel {
 }
 
 .container:hover .overlay {
-  opacity: 0.9;
+  opacity: 0.85;
   border-radius: 10px;
 }
 
@@ -1102,4 +1102,23 @@ div.panel {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+/* for better representation of projects */
+#wrapper {
+  width: 80%;
+  clear:both;
+  justify-content: center;
+}
+#first {
+  width:20em;
+  float:left;
+}
+#second {
+  width:20em;
+  float:left;
+}
+#third {
+  width:20em;
+  float:left;
 }
