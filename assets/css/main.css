@@ -918,6 +918,8 @@ h1.thick {
 
 p {
 	font-family: Open Sans, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 p.small {
@@ -927,6 +929,10 @@ p.small {
 
 p.thick {
 	font-weight: bold;
+}
+
+p.indent {
+	text-indent: 5em;
 }
 
 /* project formatting */
@@ -1126,4 +1132,13 @@ div.panel {
 #third {
   width:20em;
   float:left;
+}
+
+/* toggle show/hide */
+#showhide {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top:20px;
 }
