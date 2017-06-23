@@ -264,6 +264,7 @@ section.main {
   -ms-order: 2;
   order: 2;
 }
+
 @media (min-width: 600px) {
   section.header {
     -webkit-order: 0;
