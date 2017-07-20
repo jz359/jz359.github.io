@@ -137,25 +137,52 @@
 		  	<div id="first" class="container">
 			  <img src="images/blood.png" alt="Avatar" class="image">
 			  <div class="overlay">
-			    <div class="text">Cell_ID <br/><p class="small">a classifier for white blood cells using OpenCV and contour analysis.<br/></p></div>
+			    <div class="text">Cell_ID <br/><p class="small">a classifier for white blood cells using OpenCV and contour analysis.<br/></p><button id="cellid">More info</button></div>
 			  </div>
 			</div>
 
 		  	<div id="second" class="container">
 			  <img src="images/critterworld2.png" alt="Avatar" class="image">
 			  <div class="overlay">
-			    <div class="text">Critter World <br/><p class="small">a simulated world with language and life modeled by a custom-built compiler, interpreter, and GUI.<br/></p></div>
+			    <div class="text">Critter World <br/><p class="small">a simulated world with language and life modeled by a custom-built compiler, interpreter, and GUI.<br/></p><button id="critter">More info</button></div>
 			  </div>
 			</div>
 
 		  	<div id="third" class="container">
 			  <img src="images/magafood.png" alt="Avatar" class="image">
 			  <div class="overlay">
-			    <div class="text">Visual Yelp <br/><p class="small">an Android application that uses the Yelp and Google Maps APIs to deliver food pictures of every restaurant queried by the user.<br/></p></div>
+			    <div class="text">Visual Yelp <br/><p class="small">an Android application that uses the Yelp and Google Maps APIs to deliver food pictures of every restaurant queried by the user.<br/></p><button id="magafood">More info</button></div>
 			  </div>
 			</div>
 		</div>
 		<br/>
+
+		<!-- The Modal -->
+		<div id="cellidm" class="modal">
+  			<!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p></p>
+			  </div>
+		</div>
+
+		<!-- The Modal -->
+		<div id="critterm" class="modal">
+  			<!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p></p>
+			  </div>
+		</div>
+
+		<!-- The Modal -->
+		<div id="magafoodm" class="modal">
+  			<!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p></p>
+			  </div>
+		</div>
 
 		<footer>
 			<p> </p>
@@ -196,5 +223,87 @@
 			    }
 			}
 		</script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('cellid');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("cellid");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('critterm');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("critter");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('magafoodm');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("magafood");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script>
+
 	</body>
 </html>
