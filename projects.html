@@ -1,13 +1,70 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Andy Zhang's Website</title>
+		<title>Andy's Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- Add icon library -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<style>
+			html {
+			  box-sizing: border-box;
+			}
+
+			*, *:before, *:after {
+			  box-sizing: inherit;
+			}
+
+			.column {
+			  float: left;
+			  width: 33.3%;
+			  margin-bottom: 16px;
+			  padding: 0 8px;
+			}
+
+			@media (max-width: 650px) {
+			  .column {
+			    width: 100%;
+			    display: block;
+			  }
+			}
+
+			.card {
+			  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			.container {
+			  padding: 0 16px;
+			}
+
+			.container::after, .row::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+
+			.title {
+			  color: grey;
+			}
+
+			.button {
+			  border: none;
+			  outline: 0;
+			  display: inline-block;
+			  padding: 8px;
+			  color: white;
+			  background-color: #000;
+			  text-align: center;
+			  cursor: pointer;
+			  width: 100%;
+			}
+
+			.button:hover {
+			  background-color: #555;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -15,145 +72,51 @@
 			<header>
 				<div id="circle">
 					<a href="index.html"><img src="images/me.png" class="curve"></a>
-					<h1 class="thick">CS is my main mojo.</h1>
-					<p>For more details, (git) checkout my Github!</p>
-					<a href="http://github.com/jz359" class="fa fa-linkedin"></a>
+					<h1 class="thick">Computer Science.</h1>
+					<p>Many hours are spent here.</p>
+					<p>For more details, check out my Github!</p>
+					<a href="https://www.linkedin.com/in/jz359/" class="fa fa-linkedin"></a>
 					<a href="http://github.com/jz359" class="fa fa-github"></a>
 				</div>
-				<!--<h1 id="logo"><a href="index.html">Andy Zhang</a></h1>-->
 			</header>
 		</section>
 
-		<br/><br/>
-
-		<block2>
-			<section id="main">
-				<p><br/>This summer, I am working at <a href="https://www.sri.com/research-development/computer-vision">SRI International</a> as a Computer Vision intern.</p><br/><br/>
-			</section>
-			
-			<section id="main">
-				<br/><br/>
-				<div class="container">
-				  <img src="images/sri.png" alt="Avatar" class="image">
-				  <div class="overlay">
-				    <div class="text"><p class="small">Princeton, NJ</p></div>
-				  </div>
-				</div>
-			</section>
-
-			<section id = "main">
-				<p><br/>My project is part of a larger goal of developing a computer capable of directing movies. My role is to develop and test algorithms for monocular camera tracking using ROS and Python. We use the <a href="http://movieqa.cs.toronto.edu/home/">MovieQA dataset</a> from the University of Toronto.</p>
-			</section>
-			<br/>
-		</block2>
-
-		<br/>
-		<p>...................................................</p>
 		<br/>
 
-		<block1>
-			<section id="main">
-				<p><br/>On the side, my friends and I are building <a href="https://github.com/jz359/baeML">baeML</a>: a personalized content platform designed to combat the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)">echo-chamber effect</a> in social media.</p><br/><br/>
-			</section>
-			
-			<section id="main">
-				<br/><br/>
-				<div class="container">
-				  <a href="https://github.com/jz359/baeML"><img src="images/baeml.png" alt="Avatar" class="image"></a>
-				  <div class="overlay">
-				    <div class="text"><p class="small">I use NLP to show you things you wouldn't see in your social media bubble!</p></div>
-				  </div>
-				</div>
-			</section>
-
-			<section id = "main">
-				<p>Key features include a React+Facebook API frontend, a Skip-gram learning model built with Tensorflow, a webcrawler, and a database.</p>
-			</section>
-			<br/>
-		</block1>
-
-
-		<br/>
-		<p>...................................................</p>
-		<br/>
-
-		<block3>
-			<section id="main">
-				<p><br/>At Cornell, I use my spare time to make eyes and brains for planes.</p><br/><br/>
-			</section>
-			
-			<section id="main">
-				<br/><br/>
-				<div class="container">
-				  <img src="images/cuair2.png" alt="Avatar" class="image">
-				  <div class="overlay">
-				    <div class="text"><p class="small">self-flying planes!</p></div>
-				  </div>
-				</div>
-			</section>
-
-			<section id = "main">
-				<p>Main line of work involves writing classifiers and image processing programs for identifying over a dozen different types of targets. I'm most comfortable with OpenCV and Python.</p>
-			</section>
-			<br/>
-		</block3>
-
-		<br/>
-		<p>...................................................</p>
-		<br/>
-		<br/>
-		<p>Here's some stuff I've made in the past.</p><br/>
-		<div id="wrapper">
-		  	<div id="first" class="container">
-			  <img src="images/blood.png" alt="Avatar" class="image">
-			  <div class="overlay">
-			    <div class="text">Cell_ID <br/><p class="small">a classifier for white blood cells using OpenCV and contour analysis.<br/></p><button id="cellid">More info</button></div>
+		<div class="pproj">
+<!-- 			<div class="boxjob">
+			  <img src="./images/raft.png" alt="Avatar" style="width:90px">
+			  <a href="https://github.com/ef23/APAX"><span>APAX</span></a>
+			  <p>a distributed storage system with consistency and fault tolerance. Clients
+			   connect to our server cluster to store/mutate data, and changes are propagated using a custom implementation of the <a href="https://raft.github.io">Raft consensus algorithm</a>.</p>
+			 </div>
+ -->			<div class="boxjob">
+			  <img src="./images/cuair.png" alt="Avatar" style="width:90px">
+			  <a href="https://github.com/CUAir"><span>CUAir</span></a>
+			  <p>designed, implemented, and tested an online clustering algorithm, loosely based off of DBSCAN. re-architected the ML inference pipeline for higher throughput and lower end-to-end latency.</p>
 			  </div>
+			<div class="boxjob">
+			  <img src="./images/raft.png" alt="Avatar" style="width:90px">
+			  <a href="https://github.com/ef23/APAX"><span>APAX</span></a>
+			  <p>a distributed storage system with consistency and fault tolerance. Clients
+			   connect to our server cluster to store/mutate data, and changes are propagated using a custom implementation of the <a href="https://raft.github.io">Raft consensus algorithm</a>.</p>
+			 </div>
+			<div class="boxjob">
+			  <img src="./images/modemo.png" alt="Avatar" style="width:90px">
+			  <p><span>modemo</span></p>
+			  <p>a web service that detects and quantifies political bias in your Facebook newsfeed. Also doubles as an analysis tool for detecting bias in any given article.</p>
+			 </div>
+			<div class="boxjob">
+			  <img src="./images/baeml2.png" alt="Avatar" style="width:90px">
+			  <a href="https://github.com/jz359/baeML"><span>baeML</span></a>
+			  <p>a web application using machine learning to combat the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)">echo-chamber effect</a> in social media.</p>
 			</div>
-
-		  	<div id="second" class="container">
-			  <img src="images/critterworld2.png" alt="Avatar" class="image">
-			  <div class="overlay">
-			    <div class="text">Critter World <br/><p class="small">a simulated world with language and life modeled by a custom-built compiler, interpreter, and GUI.<br/></p><button id="critter">More info</button></div>
-			  </div>
-			</div>
-
-		  	<div id="third" class="container">
-			  <img src="images/magafood.png" alt="Avatar" class="image">
-			  <div class="overlay">
-			    <div class="text">Visual Yelp <br/><p class="small">Android application using Yelp and Google Maps APIs to deliver food pictures of restaurant food.<br/></p><button id="magafood">More info</button></div>
-			  </div>
+			<div class="boxjob">
+			  <img src="./images/magafood.png" alt="Avatar" style="width:90px">
+			  <p><span>Visual Yelp</span></p>
+			  <p>combining Yelp and Google Maps APIs to offer a visual food search experience.</p>
 			</div>
 		</div>
-		<br/>
-
-		<!-- The Modal -->
-		<div id="cellidm" class="modal">
-  			<!-- Modal content -->
-			  <div class="modal-content">
-			    <span class="close">&times;</span>
-			    <p></p>
-			  </div>
-		</div>
-
-		<!-- The Modal -->
-		<div id="critterm" class="modal">
-  			<!-- Modal content -->
-			  <div class="modal-content">
-			    <span class="close">&times;</span>
-			    <p>Coming soon!</p>
-			  </div>
-		</div>
-
-		<!-- The Modal -->
-		<div id="magafoodm" class="modal">
-  			<!-- Modal content -->
-			  <div class="modal-content">
-			    <span class="close">&times;</span>
-			    <p>User can search for restaurants based on cuisine type (e.g. "Chinese", "Mexican", etc.) or food type (e.g. "dessert", "lunch", "tacos", etc.). <br/>Restaurant-specific food pictures were obtained with Yelp API calls, while location-based restaurants were obtained with Google Maps API calls.<img src="images/magaapp.png" alt="Avatar" class="image"></p>
-			  </div>
-		</div>
-
 		<footer>
 			<p> </p>
 		</footer>
@@ -193,87 +156,5 @@
 			    }
 			}
 		</script>
-		<script>
-			// Get the modal
-			var modal = document.getElementById('cellidm');
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("cellid");
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-			    modal.style.display = "block";
-			}
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-			    }
-			}
-		</script>
-		<script>
-			// Get the modal
-			var modal = document.getElementById('critterm');
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("critter");
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-			    modal.style.display = "block";
-			}
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-			    }
-			}
-		</script>
-		<script>
-			// Get the modal
-			var modal = document.getElementById('magafoodm');
-
-			// Get the button that opens the modal
-			var btn = document.getElementById("magafood");
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks the button, open the modal 
-			btn.onclick = function() {
-			    modal.style.display = "block";
-			}
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			    modal.style.display = "none";
-			}
-
-			// When the user clicks anywhere outside of the modal, close it
-			window.onclick = function(event) {
-			    if (event.target == modal) {
-			        modal.style.display = "none";
-			    }
-			}
-		</script>
-
 	</body>
 </html>

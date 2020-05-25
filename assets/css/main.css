@@ -1,6 +1,4 @@
 .boxjob {
-  border: 2px solid #ccc;
-  background-color: #ffeded;
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0
@@ -35,7 +33,6 @@
 }
 
 .boxinfo {
-  border: 2px solid #ccc;
   background-color: #f4fff6;
   border-radius: 5px;
   padding: 16px;
@@ -71,7 +68,6 @@
 }
 
 .boxinprog {
-  border: 2px solid #ccc;
   background-color: #f4f8ff;
   border-radius: 5px;
   padding: 16px;
